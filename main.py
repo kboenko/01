@@ -36,3 +36,22 @@ for i in range(10):
         arr[i] = Child2.Child2()
 
     arr[i].foo()
+
+
+arr = [1, 2, 3, 4, 5]
+
+try:
+    print(arr[100])
+except IndexError:
+    print('Index out of range!')
+
+try:
+    print(noname)
+except NameError:
+    print('Undefined name')
+
+
+try:
+    val = int('Hello!')
+except ValueError:
+    print('Wrong type!')
