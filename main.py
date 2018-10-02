@@ -26,21 +26,13 @@ mfd.do_copy(8)
 print('---------------------End of tasks 1-3---------------------')
 print('--------------Beginning of the next task------------------')
 
-parent = ParentClass.Parent()
-child1 = Child1.Child1()
-child2 = Child2.Child2()
 arr = []
-
-case = {
-    '1': Child1.Child1(),
-    '2': Child2.Child2()
-}
 
 for i in range(10):
     arr.append(randint(1,2))
     if arr[i] == 1:
-        arr[i] = case['1']
+        arr[i] = Child1.Child1()
     else:
-        arr[i] = case['2']
+        arr[i] = Child2.Child2()
 
     arr[i].foo()
